@@ -2,8 +2,7 @@
   <PropertyGroup>
     <OutputType>Library</OutputType>
     <OutputPath>bin\$(Configuration)\</OutputPath>
-    <xUnitVersion>2.9.3</xUnitVersion>
   </PropertyGroup>
-  
+
   <!-- Test dependencies are declared in individual test project files -->
 </Project>
