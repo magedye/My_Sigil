@@ -7,7 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SigilTests", "tests\SigilTe
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8B252003-1909-4EA3-8BD9-2D20341F9143}"
 	ProjectSection(SolutionItems) = preProject
-		global.json = global.json
 		LICENSE.txt = LICENSE.txt
 		NuGet.Config = NuGet.Config
 		README.markdown = README.markdown
