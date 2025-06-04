@@ -3,4 +3,6 @@
     <OutputType>Library</OutputType>
     <OutputPath>bin\$(Configuration)\</OutputPath>
   </PropertyGroup>
+
+  <!-- Test dependencies are declared in individual test project files -->
 </Project>

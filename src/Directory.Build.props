@@ -33,7 +33,12 @@ Fixes a number of bugs around overflowing arithemtic operations.
   </PropertyGroup>
   
   <ItemGroup>
-    <PackageReference Include="Nerdbank.GitVersioning" Version="3.7.115" PrivateAssets="all" />
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All"/>
+    <!--
+      Temporarily remove versioning and SourceLink packages to simplify
+      independent builds. They can be re-enabled once verified with
+      compatible versions.
+    -->
+    <!--<PackageReference Include="Nerdbank.GitVersioning" Version="3.7.115" PrivateAssets="all" />-->
+    <!--<PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All"/>-->
   </ItemGroup>
 </Project>
