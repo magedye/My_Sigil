@@ -917,7 +917,7 @@ namespace Sigil
                     var update = SigilTuple.Create(elem.Item1 - 1, elem.Item2);
 
                     ReadonlyPatches.Remove(elem);
-                    ReadonlyPatches.Add(elem);
+                    ReadonlyPatches.Add(update);
                 }
             }
         }
@@ -992,7 +992,7 @@ namespace Sigil
                     var update = SigilTuple.Create(elem.Item1 + 1, elem.Item2);
 
                     ReadonlyPatches.Remove(elem);
-                    ReadonlyPatches.Add(elem);
+                    ReadonlyPatches.Add(update);
                 }
             }
         }
