@@ -28,6 +28,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{A15EB1CA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SigilDemoApp", "src\SigilDemoApp\SigilDemoApp.csproj", "{C382559E-BF53-4849-86AD-9F9CA5A8EFB7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SigilTestApp", "src\SigilTestApp\SigilTestApp.csproj", "{1C7372FD-291E-4923-8483-88272D25EEF9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -46,6 +48,10 @@ Global
 		{C382559E-BF53-4849-86AD-9F9CA5A8EFB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C382559E-BF53-4849-86AD-9F9CA5A8EFB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C382559E-BF53-4849-86AD-9F9CA5A8EFB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C7372FD-291E-4923-8483-88272D25EEF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C7372FD-291E-4923-8483-88272D25EEF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C7372FD-291E-4923-8483-88272D25EEF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C7372FD-291E-4923-8483-88272D25EEF9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -54,9 +60,10 @@ Global
 		{53266E21-FEBB-4155-9937-75B909134D5E} = {A15EB1CA-8E4E-40FA-A084-647F82E6DAE7}
 		{86B7204B-A776-4414-B592-F96318E77818} = {4F746F5E-38B4-4519-A7EB-83D6B546972D}
 		{C382559E-BF53-4849-86AD-9F9CA5A8EFB7} = {4F746F5E-38B4-4519-A7EB-83D6B546972D}
+		{1C7372FD-291E-4923-8483-88272D25EEF9} = {4F746F5E-38B4-4519-A7EB-83D6B546972D}
 	EndGlobalSection
-GlobalSection(ExtensibilityGlobals) = postSolution
-                SolutionGuid = {6063DA5B-B74E-4E3A-948E-A7EBCBD0675C}
-                SingleStartupProject = SigilDemoApp
-        EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6063DA5B-B74E-4E3A-948E-A7EBCBD0675C}
+		SingleStartupProject = SigilDemoApp
+	EndGlobalSection
 EndGlobal
