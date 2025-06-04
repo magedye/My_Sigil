@@ -8,7 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8B252003-1909-4EA3-8BD9-2D20341F9143}"
 	ProjectSection(SolutionItems) = preProject
 		LICENSE.txt = LICENSE.txt
-		NuGet.Config = NuGet.Config
+		nuget.config = nuget.config
 		README.markdown = README.markdown
 		Sigil.snk = Sigil.snk
 		version.json = version.json
