@@ -1,9 +1,20 @@
 # Upgrade Notes
 
-The 5.0.0 release modernizes Sigil and its build.
+## Breaking Changes
+- The library targets **.NET 8** exclusively. Previous `net461` and .NET Standard targets have been removed.
+- C# language version is now `12.0`.
 
-## Changes since 4.7.0
-- Switched to the SDK style project system with git-based versioning and SourceLink.
-- Updated targets to `net461`, `netstandard2.0` and `netstandard2.1`.
-- Converted tests to xUnit and run via `dotnet test`.
-- Updated IL and disassembler tests and removed standalone runners.
+## New Features
+- Disassembler now resolves members using generic type context, improving support for generic methods.
+- Cast transitions for `Emit.CastClass` use `WildcardType` for more accurate stack behavior.
+
+## Fixes
+- Corrected `ResolveMember` invocation when disassembling generic code.
+- Fixed readonly patch index adjustment when emitting volatile operations.
+- Pointer tests free allocated memory using `try/finally` to avoid leaks.
+- Internal helper renamed to `IsLegalConstructorCall`.
+
+## Dependencies
+- Build requires the **.NET 8 SDK** (`8.0.116`).
+- Tooling packages updated to `Nerdbank.GitVersioning` **3.7.115** and `Microsoft.SourceLink.GitHub` **8.0.0**.
+- Test packages updated to `Microsoft.NET.Test.Sdk` **17.14.1** and `xUnit` **2.9.3**.
