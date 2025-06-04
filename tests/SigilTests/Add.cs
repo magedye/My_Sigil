@@ -22,12 +22,16 @@ namespace SigilTests
             var d1 = e1.CreateDelegate();
 
             int* ptr1 = (int*)Marshal.AllocHGlobal(64);
+            try
+            {
+                var ptr2 = d1(4, ptr1);
 
-            var ptr2 = d1(4, ptr1);
-
-            Marshal.FreeHGlobal((IntPtr)ptr1);
-
-            Assert.Equal(((int)ptr1) + 4, (int)ptr2);
+                Assert.Equal(((int)ptr1) + 4, (int)ptr2);
+            }
+            finally
+            {
+                Marshal.FreeHGlobal((IntPtr)ptr1);
+            }
         }
 
         private delegate void ByRefToByRefDelegate(ref int a, int b, ref int c);
