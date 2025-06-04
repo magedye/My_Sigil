@@ -5,9 +5,5 @@
     <xUnitVersion>2.9.3</xUnitVersion>
   </PropertyGroup>
   
-  <ItemGroup>
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.14.1" />
-    <PackageReference Include="xunit" Version="$(xUnitVersion)" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="3.1.0" />
-  </ItemGroup>
+  <!-- Test dependencies are declared in individual test project files -->
 </Project>
