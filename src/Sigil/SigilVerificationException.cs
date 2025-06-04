@@ -208,6 +208,7 @@ namespace Sigil
         /// Implementation for ISerializable.
         /// </summary>
         [System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+        [Obsolete("Formatter-based serialization is obsolete", DiagnosticId = "SYSLIB0051")]
         public override void GetObjectData(SerializationInfo info, StreamingContext context)
         {
             if (info == null)

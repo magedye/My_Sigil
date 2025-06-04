@@ -18,11 +18,7 @@ namespace Sigil
 
         static Emit()
         {
-#if NETSTANDARD
             var asm = AssemblyBuilder.DefineDynamicAssembly(new AssemblyName("Sigil.Emit.DynamicAssembly"), AssemblyBuilderAccess.Run);
-#else
-            var asm = AppDomain.CurrentDomain.DefineDynamicAssembly(new AssemblyName("Sigil.Emit.DynamicAssembly"), AssemblyBuilderAccess.Run);
-#endif
             Module = asm.DefineDynamicModule("DynamicModule");
         }
 
