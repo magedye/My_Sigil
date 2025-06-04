@@ -1,12 +1,9 @@
 # Upgrade Notes
 
-The project has been migrated to .NET 8.
+The 5.0.0 release modernizes Sigil and its build.
 
-## Project changes
-- Global SDK version updated to `8.0.116` via `global.json`.
-- `Sigil` library now targets `net8.0` only and uses the built‑in `System.Reflection.Emit` APIs.
-- Tests target `net8.0` and use the latest xUnit and `Microsoft.NET.Test.Sdk` packages.
-- Build tooling updated to the latest `Nerdbank.GitVersioning` and `Microsoft.SourceLink.GitHub` packages.
-- C# language version set to `12.0`.
-
-The solution builds with Visual Studio 2022 or the .NET 8 SDK.
+## Changes since 4.7.0
+- Switched to the SDK style project system with git-based versioning and SourceLink.
+- Updated targets to `net461`, `netstandard2.0` and `netstandard2.1`.
+- Converted tests to xUnit and run via `dotnet test`.
+- Updated IL and disassembler tests and removed standalone runners.
