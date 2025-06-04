@@ -2,7 +2,14 @@
 
 A fail-fast, validating helper for [DynamicMethod](http://msdn.microsoft.com/en-us/library/system.reflection.emit.dynamicmethod.aspx) and [ILGenerator](http://msdn.microsoft.com/en-us/library/system.reflection.emit.ilgenerator.aspx).
 
+Sigil targets **.NET 8** and requires the .NET 8 SDK.
+
+## Building and Testing
+
+Run `dotnet build` to compile the solution and `dotnet test` to run the tests.
+
 ## Usage
+
 
 Sigil is a roughly 1-to-1 replacement for ILGenerator.  Rather than calling ILGenerator.Emit(OpCode, ...), you call Emit<DelegateType>.OpCode(...).
 
