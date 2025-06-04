@@ -223,7 +223,7 @@ namespace Sigil
             return this;
         }
 
-        private bool IsLegalConstructoCall(ConstructorInfo cons)
+        private bool IsLegalConstructorCall(ConstructorInfo cons)
         {
             var consDeclaredIn = cons.DeclaringType;
 
@@ -257,7 +257,7 @@ namespace Sigil
                 throw new SigilVerificationException("Constructors may only be called directly from within a constructor, use NewObject to allocate a new object with a specific constructor.", IL.Instructions(AllLocals));
             }
 
-            if (!IsLegalConstructoCall(cons))
+            if (!IsLegalConstructorCall(cons))
             {
                 throw new SigilVerificationException("Only constructors defined in the current class or it's base class may be called", IL.Instructions(AllLocals));
             }
