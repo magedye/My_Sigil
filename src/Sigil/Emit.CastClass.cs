@@ -61,9 +61,9 @@ namespace Sigil
             var newType = TypeOnStack.Get(referenceType);
 
             var transitions =
-                    new[] 
+                    new[]
                     {
-                        new StackTransition(new [] { typeof(object) }, new [] { referenceType }, before: before)
+                        new StackTransition(new [] { typeof(WildcardType) }, new [] { referenceType }, before: before)
                     };
 
             UpdateState(OpCodes.Castclass, referenceType, Wrap(transitions, "CastClass"));
